@@ -30,3 +30,9 @@ Nextjs):
 - Отправьте видео и ссылку на код в Telegram (@taskaevav).
 Дополнительно:
 - Если у вас есть идеи, которые могут стать конкурентным преимуществом, напишите об этом Telegram.
+
+
+### Референсы
+- https://christianboe.com/portfolio/skybound/
+
+![Иконки](./public/image.png)
