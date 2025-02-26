@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ТЗ
+8. ПРАКТИЧЕСКОЕ ТЕСТОВОЕ ЗАДАНИЕ
+Тестовое задание состоит из двух частей:
+Часть 1: Создание сайта визитки с использованием свободного контета на Next.js
+1. Используйте Nextjs для создания сайта-визитки.
+2. Добавьте глобальный прелоудер (loading.tsx) для основных
+страниц.
+3. Создайте две группы страниц (сгруппируйте их с помощью возможностей
+Nextjs):
+Обычные страницы с текстовым контентом.
+o Страницы с SideBar'ом слева для перехода на разные разделы.
+Часть 2: Реализация авторизации с использованием JWT и Next Auth
+1. Настройте авторизацию с использованием JWT-токена.
+2. Используйте Next Auth для реализации авторизации.
+3. Для получения JWT-токена настройте и используйте
+любое OpenAPI для тестов.
+4. Создайте кастомную страницу с формой авторизации.
+o Используйте дизайн формы по ссылке: http://christianboe.com/wp-
+content/uploads/2018/11/desktop-frame-1.jpg.
+o Фон страницы можно сделать однотонным.
+Все оформление в свободной форме
+5. Используйте TypeScript при написании кода.
+Требования к выполнению задания:
+- Перед началом выполнения задания напишите в Telegram (@taskaevav) о готовности и укажите
+сроки выполнения (не более 3 дней).
+- После завершения задания запишите видео экрана с короткими комментариями по коду и
+результату работы.
+- Отправьте видео и ссылку на код в Telegram (@taskaevav).
+Дополнительно:
+- Если у вас есть идеи, которые могут стать конкурентным преимуществом, напишите об этом Telegram.
