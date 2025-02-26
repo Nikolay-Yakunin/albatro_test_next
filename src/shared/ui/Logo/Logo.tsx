@@ -2,26 +2,31 @@ import Image from 'next/image'
 import logoImage from '@/public/Logo.svg'
 
 interface LogoProps {
+    className?: string
     size?: 'sm' | 'md' | 'lg'
+    color?: 'primary' | 'secondary' | 'default'
 }
 
-export const Logo = ({size = 'md'}: LogoProps) => {
+export const Logo = ({className, size = 'md', color = 'default'}: LogoProps) => {
     const sizes = {
         sm: {
-          width: 100,
-          height: 100   
+          width: 50, 
         },
         md: {
-          width: 200,
-          height: 200
+          width: 75,
         },
         lg: {
-          width: 300,
-          height: 300
+          width: 100,
         }
     }[size]
 
+    const colors = {
+      primary: "fiil-blue-500",
+      secondary: "fill-gray-800",
+      default: "fill-[#FFFFFF]",
+    }[color]
+
     return (
-        <Image src={logoImage} alt="logo" width={sizes.width} height={sizes.height}/>
+        <Image className={`${className} ${colors}`} src={logoImage} alt="logo" width={sizes.width} />
     )
 }
