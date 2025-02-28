@@ -22,7 +22,7 @@ export const Logo = ({
   color = "default",
   ...rest
 }: LogoProps) => {
-  // Вычисляем ширину и высоту для сохранения пропорций (исходный viewBox: 91 x 83)
+  // исходный viewBox: 91 x 83
   const width = sizeMap[size];
   const height = (width * 83) / 91;
 
