@@ -1,4 +1,10 @@
 import { HTMLAttributes } from "react"
+import { Staatliches } from 'next/font/google'
+
+const staatliches = Staatliches({
+    weight: '400',
+    subsets: ['latin'],
+})
 
 interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
     className?: string
@@ -10,14 +16,14 @@ export const Title = ({ className = "", size = 'md', children, ...rest }: TitleP
     // Мобильная версия (базовый): 32px для всех
     // Планшет (md): sm – 32px, md – 50px, lg – 64px
     // Десктоп (lg): sm – 48px, md – 50px, lg – 80px
-    const sizes = {
-        sm: "text-[32px] lg:text-[48px]",
-        md: "text-[32px] md:text-[50px]",
-        lg: "text-[32px] md:text-[64px] lg:text-[80px]",
-    }[size];
+    const sizeClasses = {
+        sm: "lg:text-[48px]",
+        md: "md:text-[50px]",
+        lg: "md:text-[64px] lg:text-[80px]",
+      }[size];
 
     return (
-        <h1 className={`font-bold uppercase ${className} ${sizes}`} {...rest}>
+        <h1 className={`font-bold uppercase ${staatliches.className} text-3xl ${sizeClasses} ${className}`} {...rest}>
             {children}
         </h1>
     )

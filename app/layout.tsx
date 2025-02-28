@@ -39,7 +39,7 @@ export default function RootLayout({
               </li>
             </ul>
           </nav>
-          <Link href="/auth/login" className="text-[#FAB91F] hover:underline">
+          <Link href="/login" className="text-[#FAB91F] hover:underline">
             Log in
           </Link>
         </header>
